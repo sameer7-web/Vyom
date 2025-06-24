@@ -1,0 +1,131 @@
+/* cart.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #FAF5FF;
+  color: #3D2A58;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #F6F2FB;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.go-back {
+  background-color: #491363;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.go-back:hover {
+  background-color: #7B3FA5;
+}
+
+.sort-filter {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #D9C3EB;
+  border-radius: 0.5rem;
+  background: white;
+}
+
+.cart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.cart-card {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.cart-card:hover {
+  transform: scale(1.02);
+}
+
+.cart-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+
+.cart-title {
+  font-size: 1.1rem;
+  color: #491363;
+  margin: 0.5rem 0;
+}
+
+.cart-desc {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.cart-price {
+  font-weight: bold;
+  color: #3D2A58;
+  margin-bottom: 0.5rem;
+}
+
+.cart-rating {
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.wishlist-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #fff;
+  border: 1px solid #D9C3EB;
+  border-radius: 50%;
+  padding: 0.4rem;
+  font-size: 1rem;
+  color: #491363;
+  cursor: pointer;
+}
+
+.add-to-cart-btn {
+  background-color: #491363;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #7B3FA5;
+}
+
+@media screen and (max-width: 768px) {
+  .cart-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}

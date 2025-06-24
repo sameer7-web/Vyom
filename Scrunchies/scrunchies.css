@@ -1,0 +1,93 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #FAF5FF;
+  margin: 0;
+  padding: 0;
+}
+
+.category-section {
+  padding: 2rem;
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.go-back {
+  background-color: #491363;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.scrunchies-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.scrunchies-card img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.scrunchies-card h3 {
+  color: #3D2A58;
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.scrunchies-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.price {
+  color: #491363;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.rating {
+  color: #FFD700;
+  font-size: 0.85rem;
+}
+
+.wishlist-btn,
+.cart-btn {
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.wishlist-btn {
+  background: none;
+  font-size: 1.2rem;
+}
+
+.cart-btn {
+  background-color: #6D4D9D;
+  color: white;
+}
+
+.cart-btn:hover {
+  background-color: #7B3FA5;
+}

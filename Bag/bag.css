@@ -1,0 +1,149 @@
+/* bag.css */
+:root {
+  --color-primary: #491363;
+  --color-accent: #6D4D9D;
+  --color-soft-bg: #F6F2FB;
+  --color-hover: #7B3FA5;
+  --color-dark-text: #3D2A58;
+  --color-light-bg: #FAF5FF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--color-light-bg);
+  color: var(--color-dark-text);
+  line-height: 1.6;
+  padding-bottom: 2rem;
+}
+
+.category-section {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.go-back {
+  background-color: var(--color-accent);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.go-back:hover {
+  background-color: var(--color-primary);
+}
+
+.category-header h2 {
+  font-size: 1.8rem;
+  color: var(--color-primary);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.bag-card {
+  background-color: var(--color-soft-bg);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bag-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.bag-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.bag-card h3 {
+  font-size: 1.2rem;
+  color: var(--color-dark-text);
+  margin-bottom: 0.5rem;
+}
+
+.bag-card p {
+  font-size: 0.9rem;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.rating {
+  font-size: 0.9rem;
+  margin: 0.4rem 0;
+  color: #888;
+}
+
+.rating span {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.wishlist-btn,
+.cart-btn {
+  margin: 0.4rem 0.3rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.wishlist-btn {
+  background-color: #fff;
+  color: var(--color-accent);
+  border: 2px solid var(--color-accent);
+}
+
+.wishlist-btn:hover {
+  background-color: var(--color-hover);
+  color: white;
+}
+
+.cart-btn {
+  background-color: var(--color-primary);
+  color: #fff;
+  border: 2px solid transparent;
+}
+
+.cart-btn:hover {
+  background-color: var(--color-accent);
+}

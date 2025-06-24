@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vyom</title>
+  <link rel="stylesheet" href="cart.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+<section class="cart-section">
+    <div class="cart-header">
+      <button id="go-back-button" class="go-back">⬅ Go Back</button>
+      <select id="sort-filter" class="sort-filter">
+        <option value="default">Sort by Price</option>
+        <option value="low">Low to High</option>
+        <option value="high">High to Low</option>
+      </select>
+    </div>
+    <div id="cart-grid" class="cart-grid"></div>
+  </section>
+  <script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vyom</title>
+  <link rel="stylesheet" href="style.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="/assets//logovyom.jpg" type="image/png" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header id="Home" class="navbar">
+  <div class="nav-container">
+    <!-- Left: Logo -->
+    <a href="/" class="logo">
+      <img src="assets/logovyom.jpg" alt="Vyom Logo" class="logo-img" />
+      <span>Vyom</span>
+    </a>
+
+    <!-- Middle: Nav links -->
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Right: Search + Icons -->
+    <div class="right-actions">
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." />
+      </div>
+      <a href="/Wishlist/Wishlist.html" class="icon-link" title="Wishlist">❤️</a>
+      <a href="account.html" class="icon-link" title="Account">👤</a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button class="hamburger" aria-label="Toggle Menu">&#9776;</button>
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div class="mobile-dropdown hidden">
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+      <a href="wishlist.html">❤️ Wishlist</a>
+      <a href="account.html">👤 Account</a>
+    </nav>
+    <div class="mobile-search">
+      <input type="text" placeholder="Search..." />
+    </div>
+  </div>
+</header>
+
+  <section class="banner-container">
+    <div class="banner-wrapper">
+      <!-- Images (one at a time) -->
+      <img class="banner-img active" src="assets/banner1.png" alt="Banner 1" />
+      <img class="banner-img" src="assets/banner2.png" alt="Banner 2" />
+      <img class="banner-img" src="assets/banner1.png" alt="Banner 3" />
+      <img class="banner-img" src="assets/banner2.png" alt="Banner 4" />
+      <img class="banner-img" src="assets/banner1.png" alt="Banner 5" />
+    </div>
+
+    <!-- Dot navigation -->
+    <div class="dot-nav">
+      <button class="dot active"></button>
+      <button class="dot"></button>
+      <button class="dot"></button>
+      <button class="dot"></button>
+      <button class="dot"></button>
+    </div>
+  </section>
+  <section class="circle-section">
+    <div class="circle-grid">
+      <div class="circle-item">
+        <div class="circle-img">
+          <a href="/Earrings/earrings.html">
+          <img src="assets/circle1.png" alt="Artificial Earrings" />
+        </div>
+        </a>
+        <p class="circle-text">Artificial Earrings</p>
+      </div>
+
+      <div class="circle-item">
+        <div class="circle-img">
+          <a href="./Earrings/earrings.html">
+          <img src="assets/circle2.png" alt="Anti Tarnish Earrings" /></a>
+        </div>
+        <p class="circle-text">Anti Tarnish Earrings</p>
+      </div>
+
+      <div class="circle-item">
+        <div class="circle-img">
+          <a href="/Chain/chain.html">
+          <img src="assets/circle3.png" alt="Chain" /></a>
+        </div>
+        <p class="circle-text">Chain</p>
+      </div>
+
+      <div class="circle-item">
+        <div class="circle-img">
+          <a href="/Bracelet//bracelet.html">
+          <img src="assets/circle4.png" alt="Anti Tarnish Bracelet" /></a>
+        </div>
+        <p class="circle-text">Anti Tarnish Bracelet</p>
+      </div>
+
+      <div class="circle-item">
+        <div class="circle-img">
+          <a href="/Scrunchies/scrunchies.html">
+          <img src="assets/circle5.png" alt="Scrunchies" /></a>
+        </div>
+        <p class="circle-text">Scrunchies</p>
+      </div>
+
+      <div class="circle-item">
+        <div class="circle-img">
+          <a href="/Bag/bag.html">
+          <img src="assets/circle2.png" alt="Bag" /></a>
+        </div>
+        <p class="circle-text">Bag</p>
+      </div>
+    </div>
+  </section>
+  <section class="about-section">
+    <div class="about-wrapper">
+      <!-- Image -->
+      <div class="about-image">
+        <img src="assets/circle2.png" alt="Our Brand" />
+      </div>
+
+      <!-- Content -->
+      <div id="about" class="about-content">
+        <h2 class="about-title animate-text">Our Story</h2>
+        <p class="animate-text">
+          Founded with love and creativity, <strong class="highlight">Vyom</strong> started as a small jewelry
+          studio in 2018 with a vision to bring elegance and tradition together.
+          Inspired by timeless designs and modern aesthetics, we handcraft every piece
+          to reflect beauty, confidence, and culture.
+        </p>
+        <p class="animate-text">
+          What began as a local brand is now a growing online store, trusted by
+          thousands of women across the country. From weddings to everyday fashion,
+          our collections are designed to make every moment sparkle.
+        </p>
+        <p class="animate-text">
+          At <strong class="highlight">Vyom</strong>, we believe that jewelry isn't just an accessory — it's a reflection
+          of identity, heritage, and emotion.
+        </p>
+        <a href="/cart/cart.html" class="cta-button animate-btn">Explore Collection</a>
+      </div>
+    </div>
+
+    <!-- Testimonial -->
+    <div class="testimonial animate-quote">
+      <blockquote>
+        “Vyom isn't just jewelry – it's a feeling of elegance that stays with you.”
+      </blockquote>
+      <p>– A Happy Customer</p>
+    </div>
+  </section>
+   <section id="features" class="features-section">
+    <h2 class="section-title">Featured Jewelry</h2>
+    <div id="rowsContainer" class="rows-container"></div>
+    <div class="show-more-wrapper">
+      <button id="showMoreBtn">Show More</button>
+    </div>
+  </section>
+  <section class="reviews-section">
+    <h3>What Our Customers Say</h3>
+    <div class="overflow-hidden">
+      <div class="reviews-container" id="reviewsWrapper">
+        <!-- Duplicated for infinite scroll -->
+      </div>
+    </div>
+  </section>
+    <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="left">
+        <img src="/assets/circle4.png" alt="Contact Us" class="contact-image" />
+        <h2>Let’s Get In Touch</h2>
+        <p>Whether you have a question about a product, order, or anything else — our team is ready to answer all your questions with love and care.</p>
+      </div>
+
+      <form class="right" id="contact-form">
+        <div>
+          <label>Name</label>
+          <input type="text" placeholder="Your name" required />
+        </div>
+        <div>
+          <label>Email</label>
+          <input type="email" placeholder="you@example.com" required />
+        </div>
+        <div>
+          <label>Message</label>
+          <textarea rows="5" placeholder="Write your message..." required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="contact-footer">
+      <div class="socials">
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      </div>
+      <div class="info">
+        <p><i class="fas fa-phone-alt"></i> +91 98765 43210</p>
+        <p><i class="fas fa-envelope"></i> support@vyomjewels.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Vyom Store, MG Road, Delhi - 110001</p>
+      </div>
+
+      <div class="terms">
+        <h3>Terms & Conditions</h3>
+        <ul>
+          <li><strong>No Return & No Exchange:</strong> Once sold, items can't be returned or exchanged.</li>
+          <li><strong>Parcel Opening Rule:</strong> Record a clear unboxing video when opening the parcel. Mandatory for complaints.</li>
+          <li><strong>Shipping Time:</strong> Orders ship within 3-5 working days based on location.</li>
+        </ul>
+
+        <h3>Privacy Policy</h3>
+        <ul>
+          <li>Your personal data is only used to process and deliver your order.</li>
+          <li>No data is shared with third-parties except trusted partners.</li>
+          <li>Payment info is encrypted and secured.</li>
+        </ul>
+        <p class="copyright">&copy; 2025 Vyom Jewelry. All rights reserved.</p>
+      </div>
+    </div>
+  </section>
+
+  
+</body>
+</html>
